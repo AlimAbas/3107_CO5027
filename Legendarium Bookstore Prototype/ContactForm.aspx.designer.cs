@@ -10,42 +10,60 @@
 namespace Legendarium_Bookstore_Prototype {
     
     
-    public partial class SiteMaster {
+    public partial class ContactForm {
         
         /// <summary>
-        /// Title control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Title;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Heading1 control.
+        /// txtSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Heading1;
+        protected global::System.Web.UI.WebControls.Label txtSubject;
         
         /// <summary>
-        /// Content1 control.
+        /// txtBody control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Content1;
+        protected global::System.Web.UI.WebControls.Label txtBody;
         
         /// <summary>
-        /// Content2 control.
+        /// txtboxBody control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Content2;
+        protected global::System.Web.UI.WebControls.TextBox txtboxBody;
+        
+        /// <summary>
+        /// Btnsendemail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Btnsendemail;
+        
+        /// <summary>
+        /// LitResult control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal LitResult;
     }
 }

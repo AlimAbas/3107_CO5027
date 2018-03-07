@@ -1,42 +1,71 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Legendarium_Bookstore_Prototype._Default" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
-    </div>
-
+<asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+    LEGENDARIUM - Homepage
 </asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
+    LEGENDARIUM
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
+    Browse and shop for books online.
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
+<div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://images.gr-assets.com/books/1367536453l/17407748.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">The Longest Ride</h4>
+              <h6 class="card-author">Nicholas Sparks</h6>
+              <h5 class="card-price">$20.00</h5>
+            </div>
+            <div class="card-footer">
+              <a href="product.aspx" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://www.dynamite.com/previews/C72513025840303011/SKinEarth03CovB.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Skin & Earth #3</h4>
+              <h6 class="card-author">Lights Bokan</h6>
+              <h5 class="card-price">$20.00</h5>
+            </div>
+            <div class="card-footer">
+              <a href="product.aspx" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://media.npr.org/assets/bakertaylor/covers/t/the-hunger-games/9780439023481_custom-bcd24563df66b0cf3b975147e537786a53857a4b-s400-c85.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">The Hunger Games</h4>
+              <h6 class="card-author">Suzanne Collins</h6>
+              <h5 class="card-price">$20.00</h5>
+            </div>
+            <div class="card-footer">
+              <a href="product.aspx" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51IvEwy6JvL.jpg" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Percy Jackson - The Last Olympian</h4>
+              <h6 class="card-title">Rick Riordan</h6>
+              <h5 class="card-title">$20.00</h5>
+            </div>
+            <div class="card-footer">
+              <a href="product.aspx" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+    </asp:Content>
