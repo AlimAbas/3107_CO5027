@@ -33,5 +33,15 @@ namespace Legendarium_Bookstore_Prototype
                 Status.Text = ex.StackTrace;
             }
         }
+
+        protected void From_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Subject_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

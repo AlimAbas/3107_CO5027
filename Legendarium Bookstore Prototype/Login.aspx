@@ -19,24 +19,18 @@
                 <h4 class="card-title">Sign Up</h4>
 
 <form action="action_page.php">
-
   <div class="container">
-    <label for="uname"><b>Email</b></label>
-    <input type="text" class="form-control" placeholder="Enter E-mail Address" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
-
-
+    <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
+    <asp:TextBox ID="SignupEmail" runat="server" class="form-control"></asp:TextBox>
+    <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
+    <asp:TextBox ID="SignupPassword" runat="server" class="form-control"></asp:TextBox>
   </div>
-
             </div>
 
             <div class="card-footer">
-              <center><button class="btn btn-primary" type="submit">Register</button></center>
+              <asp:Button ID="SignupButton" runat="server" class="btn btn-primary" Text="Sign Up" OnClick="Send_Click" />
             </div>
-          </div>
-
+            </div>
 </form>
 </div>
 
@@ -48,23 +42,19 @@
 <form action="action_page.php">
 
   <div class="container">
-    <label for="uname"><b>Email</b></label>
-    <input type="text" class="form-control" placeholder="Enter E-mail Address" name="uname" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
-
-    <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
+    <asp:Label ID="Label3" runat="server" Text="Email"></asp:Label>
+    <asp:TextBox ID="LoginEmail" runat="server" class="form-control"></asp:TextBox>
+    <asp:Label ID="Label4" runat="server" Text="Password"></asp:Label>
+    <asp:TextBox ID="LoginPassword" runat="server" class="form-control"></asp:TextBox>
   </div>
+
   <div class="container" >
     <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
             </div>
 
             <div class="card-footer">
-              <center><button class="btn btn-primary" type="submit">Login</button></center>
+              <asp:Button ID="LoginButton" runat="server" class="btn btn-primary" Text="Login" OnClick="Send_Click" />
             </div>
           </div>
 

@@ -40,6 +40,24 @@ namespace Legendarium_Bookstore_Prototype {
         protected global::System.Web.UI.WebControls.TextBox From;
         
         /// <summary>
+        /// RequiredFrom control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFrom;
+        
+        /// <summary>
+        /// ValidEmailCheck control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ValidEmailCheck;
+        
+        /// <summary>
         /// Subject control.
         /// </summary>
         /// <remarks>
@@ -49,6 +67,15 @@ namespace Legendarium_Bookstore_Prototype {
         protected global::System.Web.UI.WebControls.TextBox Subject;
         
         /// <summary>
+        /// RequiredSubject control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredSubject;
+        
+        /// <summary>
         /// Body control.
         /// </summary>
         /// <remarks>
@@ -56,6 +83,24 @@ namespace Legendarium_Bookstore_Prototype {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Body;
+        
+        /// <summary>
+        /// RequiredBody control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredBody;
+        
+        /// <summary>
+        /// ValidationSummary1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
         
         /// <summary>
         /// Send control.
