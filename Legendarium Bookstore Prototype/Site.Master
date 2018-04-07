@@ -19,7 +19,7 @@
     <link href="bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="bootstrap/css/heroic-features.css" rel="stylesheet">
+    <link href="bootstrap/css/style.css" rel="stylesheet">
 
   </head>
 
@@ -78,11 +78,10 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="footer py-5 bg-dark">
-      <div class="container">
-        <p class="text-muted">Legendarium (Prototype #1) by Alim Abas</p>
-      </div>
-    </footer>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="bootstrap/vendor/jquery/jquery.min.js"></script>

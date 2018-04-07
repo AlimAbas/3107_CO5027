@@ -22,7 +22,25 @@
 
 <!-- GOOGLE MAP -->
 <div class="col-sm-6">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15901.285864535696!2d114.9316692!3d4.8857309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcacd96016959ec39!2sLaksamana+College+of+Business!5e0!3m2!1sen!2sbn!4v1520763243809" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    <style>
+      #map {
+        height: 100%;
+      }
+    </style>
+
+    <div id="map"></div>
+<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: { lat: 4.885731, lng: 114.9316696},
+          zoom: 18
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWMTbuHGGlYMOQ1Yx65n6htExXoTCpmC0&callback=initMap"
+    async defer></script>
 </div>
 
 <!-- CONTACT FORM -->

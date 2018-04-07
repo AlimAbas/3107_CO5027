@@ -10,16 +10,16 @@
 namespace Legendarium_Bookstore_Prototype {
     
     
-    public partial class WebForm1 {
+    public partial class Register {
         
         /// <summary>
-        /// formlogin control.
+        /// formregister control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm formlogin;
+        protected global::System.Web.UI.HtmlControls.HtmlForm formregister;
         
         /// <summary>
         /// Label1 control.
@@ -31,13 +31,13 @@ namespace Legendarium_Bookstore_Prototype {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// LogEmail control.
+        /// RegEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LogEmail;
+        protected global::System.Web.UI.WebControls.TextBox RegEmail;
         
         /// <summary>
         /// Label2 control.
@@ -49,30 +49,30 @@ namespace Legendarium_Bookstore_Prototype {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// LogPassword control.
+        /// RegPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LogPassword;
+        protected global::System.Web.UI.WebControls.TextBox RegPassword;
         
         /// <summary>
-        /// LogButton control.
+        /// RegButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LogButton;
+        protected global::System.Web.UI.WebControls.Button RegButton;
         
         /// <summary>
-        /// LitLoginError control.
+        /// LitRegisterError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal LitLoginError;
+        protected global::System.Web.UI.WebControls.Literal LitRegisterError;
     }
 }
