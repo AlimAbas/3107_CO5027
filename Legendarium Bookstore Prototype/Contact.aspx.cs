@@ -24,7 +24,7 @@ namespace Legendarium_Bookstore_Prototype
 
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                 client.EnableSsl = true;
-                client.Credentials = new System.Net.NetworkCredential("Ak.Abdul.alim@gmail.com", "Limmoh6894");
+                client.Credentials = new System.Net.NetworkCredential("alimabas.testmail@gmail.com", "insertpasswordhere");
                 client.Send(message);
                 Status.Text = "Mail was sent successfully";
             }

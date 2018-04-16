@@ -39,6 +39,9 @@ namespace Legendarium_Bookstore_Prototype
                 var userIdentity = usermanager.CreateIdentity(
                     user, DefaultAuthenticationTypes.ApplicationCookie);
                 authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
+
+            if (Request.QueryString["ReturnUrl"] != null)
+                Response.Redirect(Request.QueryString["ReturnURL"]);
             }
 
     }

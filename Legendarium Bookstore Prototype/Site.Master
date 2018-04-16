@@ -19,7 +19,7 @@
     <link href="bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="bootstrap/css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
   </head>
 
@@ -68,24 +68,14 @@
       </header>
 
       <!-- Page Features -->
-      <div class="row">
+      <div class="container">
       <asp:ContentPlaceHolder ID="Content2" runat="server"></asp:ContentPlaceHolder>
       </div>
-
-      <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-
-    <!-- Footer -->
+        </div>
 
 <div class="footer">
   <p>Footer</p>
 </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="bootstrap/vendor/jquery/jquery.min.js"></script>
-    <script src="bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
 

@@ -25,7 +25,7 @@ namespace Legendarium_Bookstore_Prototype
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
 
-            IdentityRole adminRole = new IdentityRole("Admin");
+            IdentityRole adminRole = new IdentityRole("Member");
             roleManager.Create(adminRole);
             var user = new IdentityUser()
             {
@@ -36,7 +36,7 @@ namespace Legendarium_Bookstore_Prototype
             IdentityResult result = manager.Create(user, RegPassword.Text);
             if (result.Succeeded)
             {
-                manager.AddToRole(user.Id, "Admin");
+                manager.AddToRole(user.Id, "Member");
                 manager.Update(user);
                 LitRegisterError.Text = "Registration succesfully"; //todo: Log in Then
             }

@@ -13,5 +13,14 @@ namespace Legendarium_Bookstore_Prototype
         {
 
         }
+
+        protected void PurchaseButton_Click(object sender, EventArgs e)
+        {
+            decimal postagePackagingCost = 3.95m;
+            decimal ProductPrice = 10.00m;
+            int quantityOfProduct = int.Parse(DDLQuantity.SelectedValue);
+            decimal subTotal = (quantityOfProduct * ProductPrice);
+            decimal total = subTotal + postagePackagingCost;
+        }
     }
 }
