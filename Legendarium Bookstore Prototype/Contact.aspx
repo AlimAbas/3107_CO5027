@@ -48,15 +48,15 @@
         <div class="col-sm-4">
     <form id="form1" runat="server">
         
-                Email to us at:<br /><asp:Label ID="To" runat="server" Text="Ak.Abdul.Alim@gmail.com"></asp:Label><br /><br />
+                Email to us at:<br /><asp:Label ID="To" runat="server" Text="alimabas.testmail@gmail.com"></asp:Label><br /><br />
                 Your Email<br /><asp:TextBox ID="From" runat="server" class="form-control" Text="Your Email" OnTextChanged="From_TextChanged"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFrom" runat="server" ControlToValidate="From" Display="None" ErrorMessage="Email is required." ForeColor="Red"></asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ID="ValidEmailCheck" runat="server" ControlToValidate="From" ErrorMessage="Not a valid e-mail." ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 <br />
-                Subject<br /><asp:TextBox ID="Subject" runat="server" class="form-control" Text="Subject" OnTextChanged="Subject_TextChanged"></asp:TextBox>
+                Subject<br /><asp:TextBox ID="Subject" runat="server" class="form-control" Text="" OnTextChanged="Subject_TextChanged"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredSubject" runat="server" ControlToValidate="Subject" Display="None" ErrorMessage="Required field." ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
-                Message<br /><asp:TextBox ID="Body" runat="server" class="form-control" Text="This is the body of the text" TextMode="MultiLine"></asp:TextBox>
+                Message<br /><asp:TextBox ID="Body" runat="server" class="form-control" Text="" TextMode="MultiLine"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredBody" runat="server" ControlToValidate="Body" Display="None" ErrorMessage="Required field." ForeColor="Red"></asp:RequiredFieldValidator>
                 <br />
                 <asp:ValidationSummary ID="ValidationSummary1" runat="server" />

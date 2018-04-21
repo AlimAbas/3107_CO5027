@@ -15,10 +15,8 @@
         </asp:ContentPlaceHolder>
     </title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
+    <!-- CSS -->
+    <link href="content/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 
   </head>
@@ -39,8 +37,6 @@
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Product.aspx">PRODUCT</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="Contact.aspx">CONTACT</a>
