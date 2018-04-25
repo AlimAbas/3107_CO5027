@@ -18,7 +18,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
 
-    <!-- BOOTSTRAP -->
+    <!-- BOOTSTRAP & JS-->
       <link href="Content/bootstrap.min.css" rel="stylesheet" />
       <script src="Scripts/bootstrap.min.js"></script>
       <script src="Scripts/jquery-3.3.1.min.js"></script>
@@ -49,7 +49,7 @@
       </div>
     </nav>
 
-    <!-- Page Content -->
+    <!-- PAGE CONTENTS -->
     <div class="container">
 
       <header class="jumbotron my-3">

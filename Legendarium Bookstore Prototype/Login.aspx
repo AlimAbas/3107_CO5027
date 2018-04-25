@@ -15,7 +15,7 @@
         <br />
         <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
         <br />
-        <asp:TextBox ID="LogPassword" runat="server"></asp:TextBox>
+        <asp:TextBox ID="LogPassword" TextMode="Password" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="LogButton" runat="server" Text="Login" OnClick="LogButton_Click"/>
         <br />

@@ -17,20 +17,22 @@ namespace Legendarium_Bookstore_Prototype
 
         protected void Send_Click(object sender, EventArgs e)
         {
+            MailMessage message = new MailMessage(From.Text, To.Text, Subject.Text, Body.Text);
+            message.IsBodyHtml = true;
+
+            SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+            client.EnableSsl = true;
+            client.Credentials = new System.Net.NetworkCredential(From.Text, Password.Text);
+            
             try
             {
-                MailMessage message = new MailMessage(To.Text, From.Text, Subject.Text, Body.Text);
-                message.IsBodyHtml = true;
-
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
-                client.EnableSsl = true;
-                client.Credentials = new System.Net.NetworkCredential("alimabas.testmail@gmail.com", "insertpasswordhere");
                 client.Send(message);
                 Status.Text = "Mail was sent successfully";
             }
+
             catch (Exception ex)
             {
-                Status.Text = ex.StackTrace;
+                Status.Text = "Mail was not sent. Invalid Email/Password.";
             }
         }
 

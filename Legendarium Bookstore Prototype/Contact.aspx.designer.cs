@@ -40,6 +40,15 @@ namespace Legendarium_Bookstore_Prototype {
         protected global::System.Web.UI.WebControls.TextBox From;
         
         /// <summary>
+        /// ValidEmailCheck control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ValidEmailCheck;
+        
+        /// <summary>
         /// RequiredFrom control.
         /// </summary>
         /// <remarks>
@@ -49,13 +58,22 @@ namespace Legendarium_Bookstore_Prototype {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFrom;
         
         /// <summary>
-        /// ValidEmailCheck control.
+        /// Password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator ValidEmailCheck;
+        protected global::System.Web.UI.WebControls.TextBox Password;
+        
+        /// <summary>
+        /// RequiredPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredPassword;
         
         /// <summary>
         /// Subject control.
@@ -118,6 +136,6 @@ namespace Legendarium_Bookstore_Prototype {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Status;
+        protected global::System.Web.UI.WebControls.Literal Status;
     }
 }
