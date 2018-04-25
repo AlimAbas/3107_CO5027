@@ -14,13 +14,14 @@ namespace Legendarium_Bookstore_Prototype.Admin
 
         }
 
-        protected void Button3_Click(object sender, EventArgs e)
+        protected void Button1_Click1(object sender, EventArgs e)
         {
-            string productid = Request.QueryString["id"];
-            string filename = productid + ".jpg";
-            string savelocation = Server.MapPath("~/ProductImages/" + filename);
+            string ProductID = Request.QueryString["id"];
 
-            FileUploadImage.SaveAs(savelocation);
+            string filename = ProductID + ".jpg";
+            string saveLocation = Server.MapPath("~/ProductImages/" + filename);
+
+            FileUpload1.SaveAs(saveLocation);
         }
     }
 }

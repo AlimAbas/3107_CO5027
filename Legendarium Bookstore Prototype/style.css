@@ -1,12 +1,9 @@
 body {
-    padding-top: 54px;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
-.card {
-  height: 100%;
-}
-
-.footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;

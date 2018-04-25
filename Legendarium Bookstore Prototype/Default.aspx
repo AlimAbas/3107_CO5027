@@ -12,26 +12,22 @@
     Browse and shop for books online.
 </asp:Content>
 
-<asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server"><div class="row text-center">
+<asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
     
+    <div class="row text-center">
 
     <asp:Repeater ID="ProductList" runat="server" DataSourceID="ProductListSource">
         <headertemplate></headertemplate>
         <ItemTemplate>
-            
-        <div class="col-lg-3 col-md-6 mb-4">
+        
+        <div class="col-lg-2 col-md-6 mb-4">
         <div class="card">
-            <img class="card-img-top" src="http://placehold.it/500x325" alt="">
-            <div class="card-body">
-            
-                <h4 class="card-title">
-                    <a href="<%# Eval("ProductID","Product.aspx?id={0}")%>">
-                    <%# Eval("ProductName")%></a>
-                </h4>
-              <p class="card-text"></p>
+            <img class="card-img-top" src="/ProductImages/<%# Eval("ProductID")%>.jpg" />
+            <div class="card-footer">
+                <a href="<%# Eval("ProductID","Product.aspx?id={0}")%>"><%# Eval("ProductName")%></a>
             </div>
             <div class="card-footer">
-                <p><%# Eval("ProductName")%></p>
+                <%# Eval("ProductAuthor")%>
             </div>
           </div>
         </div>

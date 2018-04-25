@@ -13,10 +13,5 @@ namespace Legendarium_Bookstore_Prototype.Admin
         {
 
         }
-
-        protected void FormView1_PageIndexChanging(object sender, FormViewPageEventArgs e)
-        {
-
-        }
     }
 }

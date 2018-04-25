@@ -7,36 +7,45 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Legendarium_Bookstore_Prototype.Admin {
+namespace Legendarium_Bookstore_Prototype {
     
     
-    public partial class EditProduct1 {
+    public partial class SiteAdmin {
         
         /// <summary>
-        /// form1 control.
+        /// Title control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Title;
         
         /// <summary>
-        /// FormView1 control.
+        /// Heading1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FormView1;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Heading1;
         
         /// <summary>
-        /// SqlDataSource control.
+        /// Content1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Content1;
+        
+        /// <summary>
+        /// Content2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Content2;
     }
 }
