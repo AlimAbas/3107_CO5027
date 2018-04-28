@@ -20,14 +20,24 @@
         <headertemplate></headertemplate>
         <ItemTemplate>
         
-        <div class="col-lg-2 col-md-6 mb-4">
+        <div class="col-lg-3 col-md-6 mb-4">
         <div class="card">
-            <img class="card-img-top" src="/ProductImages/<%# Eval("ProductID")%>.jpg" />
-            <div class="card-footer">
-                <a href="<%# Eval("ProductID","Product.aspx?id={0}")%>"><%# Eval("ProductName")%></a>
+
+            <!-- PRODUCT IMAGE + LINK -->
+            <div class="card-header">
+                <a href="<%# Eval("ProductID","Product.aspx?id={0}")%>"><img class="card-img-top" src="/ProductImages/<%# Eval("ProductID")%>A.jpg" /></a>
             </div>
+
+            <!-- PRODUCT NAME + AUTHOR -->
+            <div class="card-body">
+                
+                <h5 class="card-title"><%# Eval("ProductName")%></h5>
+                <h6 class="card-subtitle mb-2 text-muted"><%# Eval("ProductAuthor")%></h6>
+            </div>
+
+            <!-- PRODUCT PRICE -->
             <div class="card-footer">
-                <%# Eval("ProductAuthor")%>
+                $<%# Eval("ProductPrice")%>
             </div>
           </div>
         </div>

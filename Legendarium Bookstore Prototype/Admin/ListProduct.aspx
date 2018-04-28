@@ -8,15 +8,15 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
 
     <form id="form1" runat="server">
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ProductID" DataSourceID="SqlDataSource" OnSelectedIndexChanged="GridView1_SelectedIndexChanged1">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ProductID" DataSourceID="SqlDataSource" OnSelectedIndexChanged="GridView1_SelectIndexChanged">
             <Columns>
-                <asp:BoundField DataField="ProductID" HeaderText="ProductID" ReadOnly="True" SortExpression="ProductID" />
-                <asp:BoundField DataField="ProductName" HeaderText="ProductName" SortExpression="ProductName" />
-                <asp:BoundField DataField="ProductDesc" HeaderText="ProductDesc" SortExpression="ProductDesc" />
-                <asp:BoundField DataField="ProductCategory" HeaderText="ProductCategory" SortExpression="ProductCategory" />
-                <asp:BoundField DataField="ProductAuthor" HeaderText="ProductAuthor" SortExpression="ProductAuthor" />
-                <asp:BoundField DataField="ProductPrice" HeaderText="ProductPrice" SortExpression="ProductPrice" />
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                <asp:BoundField DataField="ProductID" HeaderText="ID" ReadOnly="True" SortExpression="ProductID" />
+                <asp:BoundField DataField="ProductName" HeaderText="TITLE" SortExpression="ProductName" />
+                <asp:BoundField DataField="ProductCategory" HeaderText="CATEGORY" SortExpression="ProductCategory" />
+                <asp:BoundField DataField="ProductAuthor" HeaderText="AUTHOR" SortExpression="ProductAuthor" />
+                <asp:BoundField DataField="ProductDesc" HeaderText="ABOUT" SortExpression="ProductDesc" />
+                <asp:BoundField DataField="ProductPrice" HeaderText="PRICE" SortExpression="ProductPrice" />
+                <asp:BoundField DataField="ProductQuantity" HeaderText="Stock" SortExpression="ProductStock" />
                 <asp:HyperLinkField DataNavigateUrlFields="ProductID" DataNavigateUrlFormatString="UploadImage.aspx?id={0}" Text="Upload Image" ShowHeader="False" />
             </Columns>
         </asp:GridView>

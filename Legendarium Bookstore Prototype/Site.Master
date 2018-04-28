@@ -16,7 +16,7 @@
     </title>
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="stylesheet.css" rel="stylesheet" />
 
     <!-- BOOTSTRAP & JS-->
       <link href="Content/bootstrap.min.css" rel="stylesheet" />
@@ -65,9 +65,9 @@
       <asp:ContentPlaceHolder ID="Content2" runat="server"></asp:ContentPlaceHolder>
         </div>
 
-<div class="footer">
+<footer class="footer">
   <p>Footer</p>
-</div>
+</footer>
 
   </body>
 

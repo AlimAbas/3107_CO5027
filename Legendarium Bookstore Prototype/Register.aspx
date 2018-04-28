@@ -8,19 +8,20 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
 
-    <form id="formregister" runat="server">
+    <form id="formregister" runat="server" style="width: 40%;" class="container text-center">
 
         <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
         <br />
-        <asp:TextBox ID="RegEmail" runat="server" Text=""></asp:TextBox>
+        <asp:TextBox ID="RegEmail" runat="server" Text="" class="form-control"></asp:TextBox>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
         <br />
-        <asp:TextBox ID="RegPassword" runat="server" Text=""></asp:TextBox>
+        <asp:TextBox ID="RegPassword" runat="server" Text="" class="form-control"></asp:TextBox>
         <br />
-        <asp:button ID="RegButton" runat="server" text="Register" OnClick="Register_Click" />
+        <asp:button ID="RegButton" runat="server" class="btn btn-primary" text="Register" OnClick="Register_Click" />
         <br />
         <asp:Literal ID="LitRegisterError" runat="server"></asp:Literal>
 
     </form>
+
 </asp:Content>

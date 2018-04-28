@@ -2,15 +2,35 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
+    PRODUCT IMAGES
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
+    Each product can have a primary, and secondary image.
+    <a class="nav-link" href="ListProduct.aspx">- Return</a>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
 
-    <form runat="server">
-        <h1>Upload Product Image</h1>
-        <asp:FileUpload ID="FileUpload1" runat="server" />
-        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click1" />
-    </form>
+    <form id="Form1" runat="server">
 
+<table class="table text-center">
+  <tr>
+    <th>PRIMARY IMAGE</th>
+    <th>SECONDARY IMAGE</th>
+  </tr>
+  <tr>
+    <td> <asp:FileUpload ID="FileUpload1" runat="server" /></td>
+    <td><asp:FileUpload ID="FileUpload2" runat="server" /></td>
+  </tr>
+  <tr>
+    <td><asp:Button ID="Upload1" runat="server" Text="Set Primary Image" OnClick="Upload1_Click" class="btn btn-info"/></td>
+    <td><asp:Button ID="Upload2" runat="server" Text="Set Secondary Image" OnClick="Upload2_Click" class="btn btn-info"/></td>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>B</td>
+  </tr>
+</table>
+ 
+    </form>
+    
 </asp:Content>

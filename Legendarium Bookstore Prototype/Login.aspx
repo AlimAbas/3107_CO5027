@@ -7,20 +7,23 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
 
-    <form id="formlogin" runat="server">
+    <form id="formlogin" runat="server" style="width: 40%;" class="container text-center">
 
-        <asp:Label ID="Label1" runat="server" Text="Username"></asp:Label>
+        <asp:Label ID="Label1" runat="server" Text="Username" ></asp:Label>
         <br />
-        <asp:TextBox ID="LogEmail" runat="server"></asp:TextBox>
+        <asp:TextBox ID="LogEmail" runat="server" class="form-control"></asp:TextBox>
         <br />
-        <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
+        <asp:Label ID="Label2" runat="server" Text="Password" ></asp:Label>
         <br />
-        <asp:TextBox ID="LogPassword" TextMode="Password" runat="server"></asp:TextBox>
+        <asp:TextBox ID="LogPassword" TextMode="Password" runat="server" class="form-control"></asp:TextBox>
         <br />
-        <asp:Button ID="LogButton" runat="server" Text="Login" OnClick="LogButton_Click"/>
+        <asp:Button ID="LogButton" runat="server" class="btn btn-primary" Text="Login" OnClick="LogButton_Click"/>
         <br />
+        <a class="nav-link" href="Register.aspx">Not yet a member? Register here.</a>
         <asp:Literal ID="LitLoginError" runat="server"></asp:Literal>
         <br />
 
         </form>
+
+
 </asp:Content>
