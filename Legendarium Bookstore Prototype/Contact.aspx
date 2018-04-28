@@ -40,8 +40,7 @@
         });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWMTbuHGGlYMOQ1Yx65n6htExXoTCpmC0&callback=initMap"
-    async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWMTbuHGGlYMOQ1Yx65n6htExXoTCpmC0&callback=initMap" async defer></script>
 </div>
 
 <!-- CONTACT FORM -->

@@ -1,10 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Register" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+REGISTER
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
+REGISTER
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
+Sign up and become a member to make purchases.
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
 

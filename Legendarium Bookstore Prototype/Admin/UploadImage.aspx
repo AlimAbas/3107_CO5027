@@ -6,6 +6,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
     Each product can have a primary, and secondary image.
+    Upload the image one at a time.
     <a class="nav-link" href="ListProduct.aspx">- Return</a>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
