@@ -30,18 +30,18 @@
               </ol>
               <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                  <img src="/ProductImages/<%# Eval("ProductID")%>A.jpg" style="max-width: 100%; height: auto;"/>
+                  <asp:Image ID="Image1" runat="server" AlternateText="Primary Image" ImageUrl='<%# Eval("ProductID","~/ProductImages/{0}A.jpg") %>' style="max-width: 100%; height: auto;"/>
                 </div>
                 <div class="carousel-item">
-                  <img src="/ProductImages/<%# Eval("ProductID")%>B.jpg" style="max-width: 100%; height: auto;"/>
+                  <asp:Image ID="Image2" runat="server" AlternateText="Secondary Image" ImageUrl='<%# Eval("ProductID","~/ProductImages/{0}B.jpg") %>' style="max-width: 100%; height: auto;"/>
                 </div>
               </div>
               <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="false"></span>
                 <span class="sr-only">Previous</span>
               </a>
               <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon" aria-hidden="false"></span>
                 <span class="sr-only">Next</span>
               </a>
             </div>

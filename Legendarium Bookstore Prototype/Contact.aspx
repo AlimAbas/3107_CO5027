@@ -3,7 +3,7 @@
     LEGENDARIUM - Contact
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-    Contact Us
+    CONTACT US
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
 

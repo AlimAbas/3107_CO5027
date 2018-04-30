@@ -25,7 +25,11 @@
 
             <!-- PRODUCT IMAGE + LINK -->
             <div class="card-header">
-                <a href="<%# Eval("ProductID","Product.aspx?id={0}")%>"><img class="card-img-top" src="/ProductImages/<%# Eval("ProductID")%>A.jpg" /></a>
+                <a href="<%# Eval("ProductID","Product.aspx?id={0}")%>">
+
+                <asp:Image class="card-img-top" ID="imgCover" runat="server" AlternateText="Image Cover" ImageUrl='<%# Eval("ProductID","~/ProductImages/{0}A.jpg") %>' />
+
+                </a>
             </div>
 
             <!-- PRODUCT NAME + AUTHOR -->

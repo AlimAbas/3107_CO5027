@@ -186,6 +186,10 @@
     </Content>
     <Content Include="Login.aspx" />
     <Content Include="Admin\Web.config" />
+    <Content Include="ProductImages\1A.jpg" />
+    <Content Include="ProductImages\1B.jpg" />
+    <Content Include="ProductImages\2A.jpg" />
+    <Content Include="ProductImages\2B.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -369,7 +373,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="ProductImages\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

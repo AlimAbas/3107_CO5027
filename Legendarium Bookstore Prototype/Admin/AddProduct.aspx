@@ -2,61 +2,65 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-    Add Product
+    ADD PRODUCT
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
+    Use the form below to add a new product into the database.
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
     <form id="form1" runat="server">
-        <div class="container">
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource" DefaultMode="Insert">
+
+        <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource" DefaultMode="Insert" Width="50%" class="container text-center">
             <EditItemTemplate>
                 ProductID:
                 <asp:Label ID="ProductIDLabel1" runat="server" Text='<%# Eval("ProductID") %>' />
                 <br />
-                ProductName:
+                Product Name:
                 <asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />
                 <br />
-                ProductDesc:
+                Description:
                 <asp:TextBox ID="ProductDescTextBox" runat="server" Text='<%# Bind("ProductDesc") %>' />
                 <br />
-                ProductCategory:
+                Category:
                 <asp:TextBox ID="ProductCategoryTextBox" runat="server" Text='<%# Bind("ProductCategory") %>' />
                 <br />
-                ProductAuthor:
+                Author
                 <asp:TextBox ID="ProductAuthorTextBox" runat="server" Text='<%# Bind("ProductAuthor") %>' />
                 <br />
-                ProductPrice:
+                Price:
                 <asp:TextBox ID="ProductPriceTextBox" runat="server" Text='<%# Bind("ProductPrice") %>' />
                 <br />
-                ProductQuantity:
+                Quantity
                 <asp:TextBox ID="ProductQuantityTextBox" runat="server" Text='<%# Bind("ProductQuantity") %>' />
-                <br />
-                ProductImages:
-                <asp:TextBox ID="ProductImagesTextBox" runat="server" Text='<%# Bind("ProductImages") %>' />
                 <br />
                 <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
                 &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </EditItemTemplate>
             <InsertItemTemplate>
-                ProductName:
-                <asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />
-                <br />
-                ProductDesc:
-                <asp:TextBox ID="ProductDescTextBox" runat="server" Text='<%# Bind("ProductDesc") %>' />
-                <br />
-                ProductCategory:
-                <asp:TextBox ID="ProductCategoryTextBox" runat="server" Text='<%# Bind("ProductCategory") %>' />
-                <br />
-                ProductAuthor:
-                <asp:TextBox ID="ProductAuthorTextBox" runat="server" Text='<%# Bind("ProductAuthor") %>' />
-                <br />
-                ProductPrice:
-                <asp:TextBox ID="ProductPriceTextBox" runat="server" Text='<%# Bind("ProductPrice") %>' />
-                <br />
-                ProductQuantity:
-                <asp:TextBox ID="ProductQuantityTextBox" runat="server" Text='<%# Bind("ProductQuantity") %>' />
-                <br />
+                <table class="table">
+                  <tr>
+                    <th colspan="2">Title
+                    <asp:TextBox ID="ProductNameTextBox" runat="server" class="form-control" Text='<%# Bind("ProductName") %>' />
+                    </th>
+                  </tr>
+                  <tr>
+                    <td colspan="2">Description
+                    <asp:TextBox ID="ProductDescTextBox" runat="server" class="form-control" TextMode="MultiLine" Text='<%# Bind("ProductDesc") %>' /></td>
+                  </tr>
+                  <tr>
+                    <td>Author
+                    <asp:TextBox ID="ProductAuthorTextBox" runat="server" class="form-control" Text='<%# Bind("ProductAuthor") %>' /></td>
+                    <td>Category
+                    <asp:TextBox ID="ProductCategoryTextBox" runat="server" class="form-control" Text='<%# Bind("ProductCategory") %>' /></td>
+                  </tr>
+                  <tr>
+                    <td>Price
+                    <asp:TextBox ID="ProductPriceTextBox" runat="server" class="form-control" Text='<%# Bind("ProductPrice") %>' /></td>
+                    <td>Quantity
+                    <asp:TextBox ID="ProductQuantityTextBox" runat="server" class="form-control" Text='<%# Bind("ProductQuantity") %>' /></td>
+                  </tr>
+                </table>
+
                 <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
                 &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </InsertItemTemplate>
@@ -132,5 +136,5 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     </form>
-    </div>
+
 </asp:Content>

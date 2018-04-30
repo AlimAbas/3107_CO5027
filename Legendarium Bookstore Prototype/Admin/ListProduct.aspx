@@ -4,11 +4,11 @@ PRODUCT LIST
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-PRODUCT LIST
+LIST OF PRODUCTS
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
-Update the product database here.
+View and update the products in the database in the gridview below.
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="Content3" runat="server">
