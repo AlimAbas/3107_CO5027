@@ -13,6 +13,15 @@ namespace Legendarium_Bookstore_Prototype {
     public partial class About {
         
         /// <summary>
+        /// Headertitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Headertitle;
+        
+        /// <summary>
         /// form2 control.
         /// </summary>
         /// <remarks>
@@ -38,14 +47,5 @@ namespace Legendarium_Bookstore_Prototype {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-        
-        /// <summary>
-        /// DDLQuantity control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DDLQuantity;
     }
 }

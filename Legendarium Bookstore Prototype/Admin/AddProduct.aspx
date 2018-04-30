@@ -1,12 +1,15 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteAdmin.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Admin.WebForm1" %>
+﻿<%@ Page Title="Add Product" Language="C#" MasterPageFile="~/SiteAdmin.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Admin.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-    ADD PRODUCT
+    <asp:Label ID="Headertitle" runat="server" Text="ADD A NEW PRODUCT"></asp:Label>
 </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
-    Use the form below to add a new product into the database.
+    <asp:Label ID="Subtitle" runat="server" Text="Use the form below to add a new product to the database."></asp:Label>
 </asp:Content>
+
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
     <form id="form1" runat="server">
 

@@ -5,11 +5,11 @@
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-    LEGENDARIUM
+    <asp:Label ID="Headertitle" runat="server" Text="LEGENDARIUM"></asp:Label>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
-    Browse and shop for books online.
+    <asp:Label ID="Subtitle" runat="server" Text="Browse and shop for books online."></asp:Label>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">

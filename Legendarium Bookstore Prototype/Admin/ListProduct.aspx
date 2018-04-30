@@ -1,15 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteAdmin.Master" AutoEventWireup="true" CodeBehind="ListProduct.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Admin.EditProduct" %>
+﻿<%@ Page Title="List Product" Language="C#" MasterPageFile="~/SiteAdmin.Master" AutoEventWireup="true" CodeBehind="ListProduct.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Admin.EditProduct" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 PRODUCT LIST
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-LIST OF PRODUCTS
+    <asp:Label ID="Headertitle" runat="server" Text="LIST OF PRODUCTS"></asp:Label>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
-View and update the products in the database in the gridview below.
+    <asp:Label ID="Subtitle" runat="server" Text="View and update the database product here."></asp:Label>
 </asp:Content>
+
 
 <asp:Content ID="Content4" ContentPlaceHolderID="Content3" runat="server">
 

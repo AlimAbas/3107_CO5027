@@ -1,8 +1,8 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteAdmin.Master" AutoEventWireup="true" CodeBehind="UploadImage.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Admin.UploadImage" %>
+﻿<%@ Page Title="Upload Image" Language="C#" MasterPageFile="~/SiteAdmin.Master" AutoEventWireup="true" CodeBehind="UploadImage.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Admin.UploadImage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-    PRODUCT IMAGES
+    PRODUCT IMAGES - ID[<asp:Label ID="Label1" runat="server" Text=""></asp:Label>]
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
     Each product can have a primary, and secondary image.
@@ -27,8 +27,8 @@
     <td><asp:Button ID="Upload2" runat="server" Text="Set Secondary Image" OnClick="Upload2_Click" class="btn btn-info"/></td>
   </tr>
   <tr>
-    <td>A</td>
-    <td>B</td>
+    <td><asp:Image ID="ImageA" runat="server" style="max-width: 250px"/></td>
+    <td><asp:Image ID="ImageB" runat="server" style="max-width: 250px"/></td>
   </tr>
 </table>
  

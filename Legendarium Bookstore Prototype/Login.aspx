@@ -1,13 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.WebForm1" %>
+﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 LOGIN
 </asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-LOGIN
+    <asp:Label ID="Headertitle" runat="server" Text="LOGIN"></asp:Label>
 </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
-*Use the following account to log in as admin: Admin (Username), Passw0rd (Password).
+    <asp:Label ID="Subtitle" runat="server" Text="Welcome, please log in."></asp:Label>
 </asp:Content>
+
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
 
     <form id="formlogin" runat="server" style="width: 40%;" class="container text-center">

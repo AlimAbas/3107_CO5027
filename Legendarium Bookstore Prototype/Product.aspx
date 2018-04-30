@@ -1,15 +1,16 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.About" %>
+﻿<%@ Page Title="Product" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.About" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
     LEGENDARIUM - Product
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-    PRODUCT DETAILS
+    <asp:Label ID="Headertitle" runat="server" Text="PRODUCT DETAILS"></asp:Label>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
 </asp:Content>
+
 
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server"><form id="form2" runat="server">
 
@@ -84,7 +85,7 @@
             </SelectParameters>
         </asp:SqlDataSource>
 
-        <asp:DropDownList ID="DDLQuantity" runat="server" Height="16px" Width="87px"></asp:DropDownList>
         </div>
         </form>
+
 </asp:Content>

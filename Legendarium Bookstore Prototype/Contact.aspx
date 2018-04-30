@@ -1,13 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Contact1" %>
+﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Contact1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
     LEGENDARIUM - Contact
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-    CONTACT US
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
 
+<asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
+    <asp:Label ID="Headertitle" runat="server" Text="CONTACT US"></asp:Label>
 </asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
+    <asp:Label ID="Subtitle" runat="server" Text="Contact us to get support for your questions and inquiries."></asp:Label>
+</asp:Content>
+
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">
     <div class="row">
 <div class="col-sm-2">

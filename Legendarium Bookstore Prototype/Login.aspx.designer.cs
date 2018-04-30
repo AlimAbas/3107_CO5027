@@ -13,6 +13,24 @@ namespace Legendarium_Bookstore_Prototype {
     public partial class WebForm1 {
         
         /// <summary>
+        /// Headertitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Headertitle;
+        
+        /// <summary>
+        /// Subtitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Subtitle;
+        
+        /// <summary>
         /// formlogin control.
         /// </summary>
         /// <remarks>
