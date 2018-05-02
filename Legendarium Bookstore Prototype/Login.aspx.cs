@@ -42,7 +42,8 @@ namespace Legendarium_Bookstore_Prototype
 
             if (Request.QueryString["ReturnUrl"] != null)
                 Response.Redirect(Request.QueryString["ReturnURL"]);
-            }
+                LitLoginError.Text = "Login successful. Welcome.";
+        }
 
     }
 }

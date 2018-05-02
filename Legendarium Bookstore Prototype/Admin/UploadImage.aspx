@@ -27,8 +27,14 @@
     <td><asp:Button ID="Upload2" runat="server" Text="Set Secondary Image" OnClick="Upload2_Click" class="btn btn-info"/></td>
   </tr>
   <tr>
-    <td><asp:Image ID="ImageA" runat="server" style="max-width: 250px"/></td>
-    <td><asp:Image ID="ImageB" runat="server" style="max-width: 250px"/></td>
+    <td>
+        <asp:Literal ID="LiteralA" runat="server"></asp:Literal></td>
+    <td>
+        <asp:Literal ID="LiteralB" runat="server"></asp:Literal></td>
+  </tr>
+  <tr>
+    <td><asp:Image ID="ImageA" runat="server" alt="Primary Image" style="max-width: 250px"/></td>
+    <td><asp:Image ID="ImageB" runat="server" alt="Secondary Image" style="max-width: 250px"/></td>
   </tr>
 </table>
  

@@ -27,7 +27,7 @@
             <div class="card-header">
                 <a href="<%# Eval("ProductID","Product.aspx?id={0}")%>">
 
-                <asp:Image class="card-img-top" ID="imgCover" runat="server" AlternateText="Image Cover" ImageUrl='<%# Eval("ProductID","~/ProductImages/{0}A.jpg") %>' />
+                <asp:Image class="card-img-top" ID="imgCover" runat="server" AlternateText="Product Image" ImageUrl='<%# Eval("ProductID","~/ProductImages/{0}A.jpg") %>' />
 
                 </a>
             </div>

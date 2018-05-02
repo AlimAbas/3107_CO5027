@@ -166,7 +166,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\AddProduct.aspx" />
-    <Content Include="Admin\EditProduct.aspx" />
     <Content Include="Admin\ListProduct.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\UploadImage.aspx" />
@@ -190,6 +189,10 @@
     <Content Include="ProductImages\1B.jpg" />
     <Content Include="ProductImages\2A.jpg" />
     <Content Include="ProductImages\2B.jpg" />
+    <Content Include="ProductImages\6A.jpg" />
+    <Content Include="ProductImages\6B.jpg" />
+    <Content Include="ProductImages\7A.jpg" />
+    <Content Include="ProductImages\7B.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -259,13 +262,6 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin\EditProduct.aspx.cs">
-      <DependentUpon>EditProduct.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\EditProduct.aspx.designer.cs">
-      <DependentUpon>EditProduct.aspx</DependentUpon>
-    </Compile>
     <Compile Include="SiteAdmin.Master.cs">
       <DependentUpon>SiteAdmin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -18,10 +18,15 @@ LOGIN
         <asp:Label ID="Label1" runat="server" Text="Username" ></asp:Label>
         <br />
         <asp:TextBox ID="LogEmail" runat="server" class="form-control"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Enter username/email." ControlToValidate="LogEmail" ForeColor="Red"></asp:RequiredFieldValidator>
+
         <br />
         <asp:Label ID="Label2" runat="server" Text="Password" ></asp:Label>
         <br />
         <asp:TextBox ID="LogPassword" TextMode="Password" runat="server" class="form-control"></asp:TextBox>
+
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="LogPassword" ErrorMessage="Enter password." ForeColor="Red"></asp:RequiredFieldValidator>
+
         <br />
         <asp:Button ID="LogButton" runat="server" class="btn btn-primary" Text="Login" OnClick="LogButton_Click"/>
         <br />

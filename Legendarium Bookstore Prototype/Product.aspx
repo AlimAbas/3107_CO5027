@@ -9,6 +9,7 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
+    <asp:Label ID="Subtitle" runat="server" Text="Click on the left or right of the image to scroll through."></asp:Label>
 </asp:Content>
 
 

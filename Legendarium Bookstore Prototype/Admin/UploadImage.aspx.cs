@@ -45,7 +45,7 @@ namespace Legendarium_Bookstore_Prototype.Admin
                 System.Drawing.Image wmImage = bmp;
 
                 string watermark = "©LEGENDARIUM";
-                Brush brush = new SolidBrush(Color.FromArgb(175, Color.Orange));
+                Brush brush = new SolidBrush(Color.FromArgb(125, Color.DarkTurquoise));
                 Font font = new System.Drawing.Font("Impact", 100, FontStyle.Bold, GraphicsUnit.Pixel);
                 SizeF textSize = new SizeF();
                 textSize = graphicsObject.MeasureString(watermark, font);
@@ -57,6 +57,7 @@ namespace Legendarium_Bookstore_Prototype.Admin
 
                 graphicsObject.DrawString(watermark, font, brush, -(textSize.Width / 2), -(textSize.Height / 2));
                 bmp.Save(saveLocation);
+                LiteralA.Text = "Upload successful. Watermark processed.";
             }
 
         }
@@ -84,7 +85,7 @@ namespace Legendarium_Bookstore_Prototype.Admin
                 System.Drawing.Image wmImage = bmp;
 
                 string watermark = "©LEGENDARIUM";
-                Brush brush = new SolidBrush(Color.FromArgb(175, Color.Orange));
+                Brush brush = new SolidBrush(Color.FromArgb(125, Color.DarkTurquoise));
                 Font font = new System.Drawing.Font("Impact", 100, FontStyle.Bold, GraphicsUnit.Pixel);
                 SizeF textSize = new SizeF();
                 textSize = graphicsObject.MeasureString(watermark, font);
@@ -96,6 +97,7 @@ namespace Legendarium_Bookstore_Prototype.Admin
 
                 graphicsObject.DrawString(watermark, font, brush, -(textSize.Width / 2), -(textSize.Height / 2));
                 bmp.Save(saveLocation);
+                LiteralB.Text = "Upload successful. Watermark processed.";
             }
 
         }

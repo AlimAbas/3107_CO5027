@@ -18,11 +18,15 @@ REGISTER
         <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
         <br />
         <asp:TextBox ID="RegEmail" runat="server" Text="" class="form-control"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Email is required." ControlToValidate="RegEmail" ForeColor="Red"></asp:RequiredFieldValidator>
+
         <br />
         <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
         <br />
         <asp:TextBox ID="RegPassword" runat="server" Text="" class="form-control"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Password is required." ControlToValidate="RegPassword" ForeColor="Red"></asp:RequiredFieldValidator>
         <br />
+
         <asp:button ID="RegButton" runat="server" class="btn btn-primary" text="Register" OnClick="Register_Click" />
         <br />
         <asp:Literal ID="LitRegisterError" runat="server"></asp:Literal>

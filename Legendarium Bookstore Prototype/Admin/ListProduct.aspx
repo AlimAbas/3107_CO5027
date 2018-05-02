@@ -28,35 +28,38 @@ PRODUCT LIST
                 <asp:HyperLinkField DataNavigateUrlFields="ProductID" DataNavigateUrlFormatString="UploadImage.aspx?id={0}" Text="Image" ShowHeader="False" />
             </Columns>
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" DeleteCommand="DELETE FROM [Table_Product] WHERE [ProductID] = @original_ProductID AND (([ProductName] = @original_ProductName) OR ([ProductName] IS NULL AND @original_ProductName IS NULL)) AND (([ProductDesc] = @original_ProductDesc) OR ([ProductDesc] IS NULL AND @original_ProductDesc IS NULL)) AND (([ProductCategory] = @original_ProductCategory) OR ([ProductCategory] IS NULL AND @original_ProductCategory IS NULL)) AND (([ProductAuthor] = @original_ProductAuthor) OR ([ProductAuthor] IS NULL AND @original_ProductAuthor IS NULL)) AND (([ProductPrice] = @original_ProductPrice) OR ([ProductPrice] IS NULL AND @original_ProductPrice IS NULL))" InsertCommand="INSERT INTO [Table_Product] ([ProductID], [ProductName], [ProductDesc], [ProductCategory], [ProductAuthor], [ProductPrice]) VALUES (@ProductID, @ProductName, @ProductDesc, @ProductCategory, @ProductAuthor, @ProductPrice)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Table_Product]" UpdateCommand="UPDATE [Table_Product] SET [ProductName] = @ProductName, [ProductDesc] = @ProductDesc, [ProductCategory] = @ProductCategory, [ProductAuthor] = @ProductAuthor, [ProductPrice] = @ProductPrice WHERE [ProductID] = @original_ProductID AND (([ProductName] = @original_ProductName) OR ([ProductName] IS NULL AND @original_ProductName IS NULL)) AND (([ProductDesc] = @original_ProductDesc) OR ([ProductDesc] IS NULL AND @original_ProductDesc IS NULL)) AND (([ProductCategory] = @original_ProductCategory) OR ([ProductCategory] IS NULL AND @original_ProductCategory IS NULL)) AND (([ProductAuthor] = @original_ProductAuthor) OR ([ProductAuthor] IS NULL AND @original_ProductAuthor IS NULL)) AND (([ProductPrice] = @original_ProductPrice) OR ([ProductPrice] IS NULL AND @original_ProductPrice IS NULL))">
+        <asp:SqlDataSource ID="SqlDataSource" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:IdentityConnectionString %>" DeleteCommand="DELETE FROM [Table_Product] WHERE [ProductID] = @original_ProductID AND (([ProductName] = @original_ProductName) OR ([ProductName] IS NULL AND @original_ProductName IS NULL)) AND (([ProductDesc] = @original_ProductDesc) OR ([ProductDesc] IS NULL AND @original_ProductDesc IS NULL)) AND (([ProductCategory] = @original_ProductCategory) OR ([ProductCategory] IS NULL AND @original_ProductCategory IS NULL)) AND (([ProductAuthor] = @original_ProductAuthor) OR ([ProductAuthor] IS NULL AND @original_ProductAuthor IS NULL)) AND (([ProductPrice] = @original_ProductPrice) OR ([ProductPrice] IS NULL AND @original_ProductPrice IS NULL)) AND (([ProductQuantity] = @original_ProductQuantity) OR ([ProductQuantity] IS NULL AND @original_ProductQuantity IS NULL))" InsertCommand="INSERT INTO [Table_Product] ([ProductName], [ProductDesc], [ProductCategory], [ProductAuthor], [ProductPrice], [ProductQuantity]) VALUES (@ProductName, @ProductDesc, @ProductCategory, @ProductAuthor, @ProductPrice, @ProductQuantity)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT [ProductID], [ProductName], [ProductDesc], [ProductCategory], [ProductAuthor], [ProductPrice], [ProductQuantity] FROM [Table_Product]" UpdateCommand="UPDATE [Table_Product] SET [ProductName] = @ProductName, [ProductDesc] = @ProductDesc, [ProductCategory] = @ProductCategory, [ProductAuthor] = @ProductAuthor, [ProductPrice] = @ProductPrice, [ProductQuantity] = @ProductQuantity WHERE [ProductID] = @original_ProductID AND (([ProductName] = @original_ProductName) OR ([ProductName] IS NULL AND @original_ProductName IS NULL)) AND (([ProductDesc] = @original_ProductDesc) OR ([ProductDesc] IS NULL AND @original_ProductDesc IS NULL)) AND (([ProductCategory] = @original_ProductCategory) OR ([ProductCategory] IS NULL AND @original_ProductCategory IS NULL)) AND (([ProductAuthor] = @original_ProductAuthor) OR ([ProductAuthor] IS NULL AND @original_ProductAuthor IS NULL)) AND (([ProductPrice] = @original_ProductPrice) OR ([ProductPrice] IS NULL AND @original_ProductPrice IS NULL)) AND (([ProductQuantity] = @original_ProductQuantity) OR ([ProductQuantity] IS NULL AND @original_ProductQuantity IS NULL))">
             <DeleteParameters>
                 <asp:Parameter Name="original_ProductID" Type="Int32" />
                 <asp:Parameter Name="original_ProductName" Type="String" />
                 <asp:Parameter Name="original_ProductDesc" Type="String" />
                 <asp:Parameter Name="original_ProductCategory" Type="String" />
                 <asp:Parameter Name="original_ProductAuthor" Type="String" />
-                <asp:Parameter Name="original_ProductPrice" Type="Double" />
+                <asp:Parameter Name="original_ProductPrice" Type="Decimal" />
+                <asp:Parameter Name="original_ProductQuantity" Type="Int32" />
             </DeleteParameters>
             <InsertParameters>
-                <asp:Parameter Name="ProductID" Type="Int32" />
                 <asp:Parameter Name="ProductName" Type="String" />
                 <asp:Parameter Name="ProductDesc" Type="String" />
                 <asp:Parameter Name="ProductCategory" Type="String" />
                 <asp:Parameter Name="ProductAuthor" Type="String" />
-                <asp:Parameter Name="ProductPrice" Type="Double" />
+                <asp:Parameter Name="ProductPrice" Type="Decimal" />
+                <asp:Parameter Name="ProductQuantity" Type="Int32" />
             </InsertParameters>
             <UpdateParameters>
                 <asp:Parameter Name="ProductName" Type="String" />
                 <asp:Parameter Name="ProductDesc" Type="String" />
                 <asp:Parameter Name="ProductCategory" Type="String" />
                 <asp:Parameter Name="ProductAuthor" Type="String" />
-                <asp:Parameter Name="ProductPrice" Type="Double" />
+                <asp:Parameter Name="ProductPrice" Type="Decimal" />
+                <asp:Parameter Name="ProductQuantity" Type="Int32" />
                 <asp:Parameter Name="original_ProductID" Type="Int32" />
                 <asp:Parameter Name="original_ProductName" Type="String" />
                 <asp:Parameter Name="original_ProductDesc" Type="String" />
                 <asp:Parameter Name="original_ProductCategory" Type="String" />
                 <asp:Parameter Name="original_ProductAuthor" Type="String" />
-                <asp:Parameter Name="original_ProductPrice" Type="Double" />
+                <asp:Parameter Name="original_ProductPrice" Type="Decimal" />
+                <asp:Parameter Name="original_ProductQuantity" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
     </form>
