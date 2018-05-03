@@ -169,6 +169,9 @@
     <Content Include="Admin\ListProduct.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="Admin\UploadImage.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Member\CancelPurchaseaspx.aspx" />
+    <Content Include="Member\CompletePurchase.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -176,15 +179,15 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Product.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Login.aspx" />
     <Content Include="Admin\Web.config" />
+    <Content Include="Member\ProductPurchase.aspx" />
+    <Content Include="Product.aspx" />
     <Content Include="ProductImages\1A.jpg" />
     <Content Include="ProductImages\1B.jpg" />
     <Content Include="ProductImages\2A.jpg" />
@@ -215,6 +218,7 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Member\Web.config" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -262,6 +266,41 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\CancelPurchaseaspx.aspx.cs">
+      <DependentUpon>CancelPurchaseaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\CancelPurchaseaspx.aspx.designer.cs">
+      <DependentUpon>CancelPurchaseaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\CompletePurchase.aspx.cs">
+      <DependentUpon>CompletePurchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\CompletePurchase.aspx.designer.cs">
+      <DependentUpon>CompletePurchase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Member\ProductPurchase.aspx.cs">
+      <DependentUpon>ProductPurchase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Member\ProductPurchase.aspx.designer.cs">
+      <DependentUpon>ProductPurchase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SiteAdmin.Master.cs">
       <DependentUpon>SiteAdmin.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -304,13 +343,6 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product.aspx.cs">
-      <DependentUpon>Product.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Product.aspx.designer.cs">
-      <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Default.aspx.cs">
@@ -358,13 +390,6 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

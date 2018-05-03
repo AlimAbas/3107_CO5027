@@ -1,15 +1,15 @@
-﻿<%@ Page Title="Product" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Product.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Product" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProductPurchase.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Member.ProductPurchase" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
     LEGENDARIUM - Product
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-    <asp:Label ID="Headertitle" runat="server" Text="PRODUCT DETAILS"></asp:Label>
+    <asp:Label ID="Headertitle" runat="server" Text="PURCHASE PRODUCT"></asp:Label>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
-    <asp:Label ID="Subtitle" runat="server" Text="Click on the left or right of the image to scroll through."></asp:Label>
+    <asp:Label ID="Subtitle" runat="server" Text="Select the quantity for the selected product before proceeding."></asp:Label>
 </asp:Content>
 
 
@@ -23,7 +23,7 @@
 
               <!--- PRODUCT IMAGE --->
 
-            <th rowspan="6" style="width: 50%;">
+            <th rowspan="5" style="width: 30%;">
 
               <div id="myCarousel" class="carousel slide bg-inverse w-50 ml-auto mr-auto" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -63,22 +63,13 @@
           </tr>
           <tr>
             <td>PRICE</td>
-            <td>$<asp:Label ID="ProductPriceLabel" runat="server" Text='<%# Bind("ProductPrice") %>' /></td>
+            <td>$<asp:Label ID="ProductPriceLabel" runat="server" Text='<%# Bind("ProductPrice") %>'/> (+$5.00 Packaging)</td>
           </tr>
           <tr>
             <td>STOCK</td>
-            <td><asp:Label ID="ProductStockLabel" runat="server" Text='<%# Bind("ProductQuantity") %>' /></td>
+            <td><asp:Label ID="Label1" runat="server" Text='<%# Bind("ProductQuantity") %>' /></td>
           </tr>
-              <tr>
-                  <td colspan="2"><a class="btn btn-info text-center" href='<%# Eval("ProductID","Member/ProductPurchase.aspx?id={0}")%>'>PURCHASE</a></td>
-              </tr>
         </table>
-
-            <!--- PRODUCT DESCRIPTION --->
-            <hr />
-            <div class="container text-center" style="width:80%"><asp:Label ID="Label1" runat="server" Text='<%# Bind("ProductDesc") %>' /></div>
-            <br />
-            <hr />
 
         </ItemTemplate>
         </asp:FormView>
@@ -89,6 +80,33 @@
                 <asp:QueryStringParameter Name="ProductID" QueryStringField="id" Type="Int32" />
             </SelectParameters>
         </asp:SqlDataSource>
+          
+          <table class="table text-center">
+            <tr>
+            <th>PURCHASE</th>
+            </tr>
+            <tr>
+
+            <td>Quantity
+                <asp:DropDownList ID="ddlQuantity" runat="server">
+              <asp:ListItem>1</asp:ListItem>
+              <asp:ListItem>2</asp:ListItem>
+              <asp:ListItem>3</asp:ListItem>
+                </asp:DropDownList>
+
+            </td>
+            </tr>
+
+            <tr>
+          <td>          <asp:Button ID="btnPurchaseProduct" runat="server" OnClick="BtnPurchaseProduct_Click" Text="Proceed with PayPal" class="btn btn-info"/> </td>
+            </tr>
+
+            <tr>
+          <td><a href="https://www.paypal.com/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/logo/AM_mc_vs_dc_ae.jpg" border="0" alt="PayPal Acceptance Mark"></a></td>
+            </tr>
+
+        </table>
+          <br />
 
         </div>
         </form>

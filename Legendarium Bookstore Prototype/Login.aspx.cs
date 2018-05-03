@@ -10,7 +10,7 @@ using Microsoft.Owin.Security;
 
 namespace Legendarium_Bookstore_Prototype
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -34,15 +34,15 @@ namespace Legendarium_Bookstore_Prototype
         }
 
         private void LogUserIn(UserManager<IdentityUser> usermanager, IdentityUser user)
-            {
-                var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
-                var userIdentity = usermanager.CreateIdentity(
-                    user, DefaultAuthenticationTypes.ApplicationCookie);
-                authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
+        {
+            var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+            var userIdentity = usermanager.CreateIdentity(
+                user, DefaultAuthenticationTypes.ApplicationCookie);
+            authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
 
             if (Request.QueryString["ReturnUrl"] != null)
                 Response.Redirect(Request.QueryString["ReturnURL"]);
-                LitLoginError.Text = "Login successful. Welcome.";
+            LitLoginError.Text = "Login successful. Welcome.";
         }
 
     }

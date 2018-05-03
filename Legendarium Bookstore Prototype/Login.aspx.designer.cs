@@ -10,7 +10,7 @@
 namespace Legendarium_Bookstore_Prototype {
     
     
-    public partial class WebForm1 {
+    public partial class Login {
         
         /// <summary>
         /// Headertitle control.

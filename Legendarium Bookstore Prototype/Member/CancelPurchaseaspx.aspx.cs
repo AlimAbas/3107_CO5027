@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Legendarium_Bookstore_Prototype
 {
-    public partial class Product : System.Web.UI.Page
+    public partial class CancelPurchaseaspx : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

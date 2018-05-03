@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Legendarium_Bookstore_Prototype.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
 LOGIN
 </asp:Content>
@@ -8,7 +8,7 @@ LOGIN
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="Content1" runat="server">
-    <asp:Label ID="Subtitle" runat="server" Text="Welcome, please log in."></asp:Label>
+    <asp:Label ID="Subtitle" runat="server" Text="Welcome, please log in to make purchases."></asp:Label>
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="Content2" runat="server">

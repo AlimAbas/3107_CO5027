@@ -7,72 +7,72 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Legendarium_Bookstore_Prototype {
+namespace Legendarium_Bookstore_Prototype.Member {
     
     
-    public partial class SiteAdmin {
+    public partial class ProductPurchase {
         
         /// <summary>
-        /// Title control.
+        /// Headertitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Title;
+        protected global::System.Web.UI.WebControls.Label Headertitle;
         
         /// <summary>
-        /// hyperlink4 control.
+        /// Subtitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hyperlink4;
+        protected global::System.Web.UI.WebControls.Label Subtitle;
         
         /// <summary>
-        /// hyperlink1 control.
+        /// form2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink hyperlink1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
         
         /// <summary>
-        /// Heading1 control.
+        /// FormView1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Heading1;
+        protected global::System.Web.UI.WebControls.FormView FormView1;
         
         /// <summary>
-        /// Content1 control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Content1;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// Content2 control.
+        /// ddlQuantity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Content2;
+        protected global::System.Web.UI.WebControls.DropDownList ddlQuantity;
         
         /// <summary>
-        /// Content3 control.
+        /// btnPurchaseProduct control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder Content3;
+        protected global::System.Web.UI.WebControls.Button btnPurchaseProduct;
     }
 }

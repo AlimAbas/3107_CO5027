@@ -23,7 +23,7 @@ REGISTER
         <br />
         <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
         <br />
-        <asp:TextBox ID="RegPassword" runat="server" Text="" class="form-control"></asp:TextBox>
+        <asp:TextBox ID="RegPassword" runat="server" TextMode="Password" Text="" class="form-control"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Password is required." ControlToValidate="RegPassword" ForeColor="Red"></asp:RequiredFieldValidator>
         <br />
 
